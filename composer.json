@@ -1,0 +1,26 @@
+{
+	"name" : "tokk/paypal",
+	"description" : "PayPal reccuring payments integration",
+	"type" : "symfony-bundle",
+	"authors" : [{
+			"name" : "Tokk"
+		}
+	],
+	"keywords" : [
+		"paypal",
+		"symfony2",
+		"bundle",
+		"tokk",
+		"payments",
+		"recurring"
+	],
+	"homepage" : "http://github.com/kamilkurczak/PayPal",
+	"license" : [
+		"MIT"
+	],
+	"autoload" : {
+		"psr-0" : {
+			"Tokk\\Paypal" : "src/"
+		}
+	}
+}
