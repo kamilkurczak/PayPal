@@ -4,9 +4,9 @@ namespace Tokk\Paypal\Parameters;
 
 interface Parameters
 {
-    public function set($key, $value);
+    public function addValues($values = array());
     
-    public function get();
+    public function set($parameter, $value);
     
     public function toArray();
 }

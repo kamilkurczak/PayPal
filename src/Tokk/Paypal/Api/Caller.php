@@ -34,7 +34,7 @@ class Caller implements Api
         curl_setopt($this->curl, CURLOPT_SSL_VERIFYHOST, false);
         curl_setopt($this->curl, CURLOPT_RETURNTRANSFER, 1);
         curl_setopt($this->curl, CURLOPT_POST, 1);
-        curl_setopt($this->curl, CURLOPT_POSTFIELDS, $request);
+        curl_setopt($this->curl, CURLOPT_POSTFIELDS, $request->get());
     }
     
     private function execute()
@@ -61,5 +61,10 @@ class Caller implements Api
     public function getResponse()
     {
         return $this->response;
+    }
+    
+    public function getErrors()
+    {
+        return $this->errors;
     }
 }

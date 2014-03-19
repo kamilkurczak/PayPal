@@ -2,9 +2,11 @@
 
 namespace Tokk\Paypal\Request;
 
+use Tokk\Paypal\Parameters\Parameters;
+
 interface Request
 {
-    public function prepare($parameters = array());
+    public function prepare(Parameters $parameters);
     
     public function get();
 }
